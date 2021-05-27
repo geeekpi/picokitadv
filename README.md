@@ -8,3 +8,7 @@ This kit contains most of the commonly used sensors, and provides an operating m
 * One-stop shopping
 * Abundant learning resources
 * Easy to build circuit
+## Product Includes
+![Pico Kit Pro](https://raw.githubusercontent.com/geeekpi/picokitadv/main/images/logo.jpg)
+## Application Senario
+![Application](https://raw.githubusercontent.com/geeekpi/picokitadv/main/images/appwiz.jpg)
