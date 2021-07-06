@@ -12,3 +12,5 @@ This kit contains most of the commonly used sensors, and provides an operating m
 ![Pico Kit Pro](https://raw.githubusercontent.com/geeekpi/picokitadv/main/images/logo.jpg)
 ## Application Senario
 ![Application](https://raw.githubusercontent.com/geeekpi/picokitadv/main/images/appwiz.jpg)
+## YouTube channel:
+![youtube](https://youtu.be/YZkLAnIAKCc)
