@@ -5,6 +5,7 @@ RED = 0
 BLUE = 1
 GREEN = 2
 
+# SPI(0, baudrate=992063, polarity=0, phase=0, bits=8, sck=6, mosi=7, miso=4)  SCK-> GP6, MOSI-> GP7, MISO-GP4(Not connect)
 bus = SPI(0)
 print(bus)
 CE = Pin(5, Pin.OUT)
