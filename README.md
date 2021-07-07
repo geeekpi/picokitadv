@@ -13,5 +13,5 @@ This kit contains most of the commonly used sensors, and provides an operating m
 ## Application Senario
 ![Application](https://raw.githubusercontent.com/geeekpi/picokitadv/main/images/appwiz.jpg)
 ## YouTube channel:
-* [YouTube Video Tutorial](https://youtu.be/YZkLAnIAKCc)
+* [YouTube Video Tutorial](https://youtu.be/YVWAyn7TJFk)
 * [wiki](https://wiki.52pi.com/index.php/Raspberry_Pi_Pico_MicroPython_Programing_Sensor_Kit_SKU:_K-0586)
