@@ -1,19 +1,13 @@
-from machine import Pin, ADC
+from machine import Pin
+import utime
 from time import sleep
- 
- 
-led = Pin(0, Pin.OUT)
-# GP26 -> ADC0
-sound_sensor = ADC(0)
+
+# Connect GP16 to PIR sensor's OUT pin), please use 3.3V connect to VCC on PIR sensor.
+pir = Pin(16, Pin.IN, Pin.PULL_UP)
 
 
 while True:
-    if sound_sensor.read_u16() > 65500:
-        print("No Sound Detected!")
-        led.value(0)
-        sleep(2)
-    elif sound_sensor.read_u16() < 9000:
-        print("Sound Detected!")
-        sleep(0.5)
-        led.value(1)    
+    print(pir.value())
+    sleep(0.1)
+    
     
