@@ -26,12 +26,15 @@ class Rotary:
             return
         
         transition = (self.last_status << 2) | new_status
-        if transition == 0b1110:
-            micropython.schedule(self.call_handlers, Rotary.ROT_CW)
-        elif transition == 0b1101:
-            micropython.schedule(self.call_handlers, Rotary.ROT_CCW)
-        self.last_status = new_status
-    
+        try:
+            if transition == 0b1110:
+                micropython.schedule(self.call_handlers, Rotary.ROT_CW)
+            elif transition == 0b1101:
+                micropython.schedule(self.call_handlers, Rotary.ROT_CCW)
+            self.last_status = new_status
+        except RuntimeError:
+            pass
+        
     def switch_detect(self, pin):
         if self.last_button_status == self.sw_pin.value():
             return
