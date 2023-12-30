@@ -26,7 +26,7 @@ if lowres == True:
     inv1a = bytearray(b"\xd0xPx\xf0")
     inv1b = bytearray(b"\xf0xPx\xd0")
     inv2a = bytearray(b"\xe0P\xf8P\xe0")
-    inv2b = bytearray(b"\xd0x\xd0")
+    inv2b = bytearray(b"\xd0xPx\xd0")
     spritex = 5 #how big are your alien sprites?
     spritey = 5
     aliencountx = 4 #How many rows and columns of aliens
@@ -34,7 +34,7 @@ if lowres == True:
     alienspacingx = 5
     alienspacingy = 3
 else:
-     #sprite definitions for Aliens. set spritex and spritey to 7
+    #sprite definitions for Aliens. set spritex and spritey to 7
     inv1a = bytearray(b"~\xd8\x88\xf8\x88\xd8~")
     inv1b = bytearray(b"|\xda\xc8\xf8\xc8\xda|")
     inv2a = bytearray(b"\x88\\:\x1e:\\\x88")
@@ -97,10 +97,10 @@ def reset_aliens(visibility): # Used to reset aliens to starting position and, o
         c.y = c.origy
             
 # Load images into framebuffer
-inv1aBuff = framebuf.FrameBuffer(inv1a, 7, 7, framebuf.MONO_HLSB)
-inv1bBuff = framebuf.FrameBuffer(inv1b, 7, 7, framebuf.MONO_HLSB)
-inv2aBuff = framebuf.FrameBuffer(inv2a, 7, 7, framebuf.MONO_HLSB)
-inv2bBuff = framebuf.FrameBuffer(inv2b, 7, 7, framebuf.MONO_HLSB)
+inv1aBuff = framebuf.FrameBuffer(inv1a, spritex, spritey, framebuf.MONO_HLSB)
+inv1bBuff = framebuf.FrameBuffer(inv1b, spritex, spritey, framebuf.MONO_HLSB)
+inv2aBuff = framebuf.FrameBuffer(inv2a, spritex, spritey, framebuf.MONO_HLSB)
+inv2bBuff = framebuf.FrameBuffer(inv2b, spritex, spritey, framebuf.MONO_HLSB)
 
 ufoBuff = framebuf.FrameBuffer(ufo, 12, 8, framebuf.MONO_HLSB)
 
